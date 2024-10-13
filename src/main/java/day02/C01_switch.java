@@ -43,6 +43,19 @@ public class C01_switch {
             case '^':
                 System.out.println("Lütfen birbirinin kuvvetini almak istediğiniz sayıları giriniz");
                 System.out.println("sayılar kuvvet durumu:" +Math.pow(input.nextDouble(), input.nextDouble()));
+
+                // üs alma işleminin for döngüsüyle yapışmış hali burası önemli interviewler içib
+                double sayı1 = input.nextDouble();
+                double sayı2 = input.nextDouble();
+                double sonuc = sayı1;
+
+                for (int i = 1; i < sayı2 ; i++) {
+
+                    sonuc*=sayı1;
+                }
+                System.out.println(sonuc);
+
+
                 break;
             default:
                 System.out.println("Lütfen geçerli bir operator girniz");

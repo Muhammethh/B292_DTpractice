@@ -29,6 +29,18 @@ public class C03_stringManipulation {
         }
 
 
+        /* if (!email.contains("@gmail.com")){
+            System.out.println("Lutfen gmail adresi giriniz :)");
+        }else if (email.contains(" ")){
+            System.out.println("lütfen bosluksuz yazdirin");
+        } else if (email.endsWith("@gmail.com")) {
+            System.out.println("Email adresiniz kaydedildi");
+        }else {
+            System.out.println("lütfen yazımını kontrol ediniz");
+
+         */
+
+
 
 
     }
