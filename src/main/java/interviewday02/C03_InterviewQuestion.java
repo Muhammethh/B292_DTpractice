@@ -24,9 +24,9 @@ public class C03_InterviewQuestion {
 
         //Fibonacci dizisini oluşturalım
 
-        for (int i = 2; i <count ; i++) {
+        for (int i = 2; i < count; i++) {
 
-            int nextTerim = fibonacciList.get(i-1) + fibonacciList.get(i-2);
+            int nextTerim = fibonacciList.get(i - 1) + fibonacciList.get(i - 2);
             fibonacciList.add(nextTerim);
         }
 
@@ -34,15 +34,32 @@ public class C03_InterviewQuestion {
         System.out.println(fibonacciList);
 
         //Fibonacci dizisinin toplamını bulalım
-        int sum=0;
+        int sum = 0;
 
-        for (int num : fibonacciList){
-            sum +=num;
+        for (int num : fibonacciList) {
+            sum += num;
         }
         System.out.println("Toplam: " + sum);
 
 
+        int min = fibonacciList.stream().reduce(Math::min).get();
+        int max = fibonacciList.stream().reduce(Math::max).get();
+
+        System.out.println(min);
+        System.out.println(max);
 
 
+        //---------Böyle de yapılabilirdi
+       /* int max = fibonacci.get(0);
+        int min = fibonacci.get(0);
+
+        for (Integer w : fibonacci) {
+
+            sum += w;
+            max = Math.max(w, max);
+            min = Math.min(w, min);
+
+        }
+*/
     }
 }
